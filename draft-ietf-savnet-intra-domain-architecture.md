@@ -82,10 +82,10 @@ SAV Rule:
 : The rule that indicates the validity of a specific source IP address or source IP prefix per router interface. It is used by a router to make SAV decisions.
 
 SAV Agent:
-: A logical function that obtains information used for SAV rule generation, generates SAV rules, and provides the generated SAV rules to routers for application at specific external interfaces. A SAV Agent may be implemented on a router or in another system. This document does not require a particular deployment location for the SAV Agent. Depending on the mechanism and the information available, a SAV Agent may use routing information, SAV-specific information, or both.
+: A logical function that obtains information used for SAV rule generation, generates SAV rules, and provides the generated SAV rules to routers for application at specific external interfaces. A SAV Agent may be implemented on a router or in an operator-mananged system. This document does not require a particular deployment location for the SAV Agent. Depending on the mechanism and the information available, a SAV Agent may use routing information, SAV-specific information, or both.
 
 SAV-specific Information:
-: Information specialized for SAV rule generation. SAV-specific information may be provided by routers within an AS, or through operator provisioning (i.e., SAV-specific configurations).
+: Information specialized for SAV rule generation. SAV-specific information for intra-domain SAV may be provided by routers within an AS, or through operator provisioning (i.e., SAV-specific configurations).
 
 SAV-specific Information Delivery Mechanism:
 : A mechanism by which SAV-specific information is made available to a SAV Agent when the information is not locally available to that SAV Agent. Such a mechanism may be realized by reusing an existing mechanism/protocol, extending an existing mechanism/protocol, or defining a new mechanism/protocol.
