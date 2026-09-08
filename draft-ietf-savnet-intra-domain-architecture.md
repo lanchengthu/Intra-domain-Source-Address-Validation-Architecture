@@ -213,7 +213,7 @@ The architecture can improve SAV accuracy when the information available to the 
 
 For example, when the same entity is connected through multiple external interfaces or routers, the SAV Agent can use the association among those interfaces to consider routing information associated with the entity more completely, thereby improving accuracy in asymmetric-route scenarios. In addition, SAV-specific information can explicitly identify legitimate source prefixes that are not represented in routing information, such as source-only prefixes in hidden-prefix scenarios.
 
-When the required information is sufficiently complete, correct, and timely, the SAV Agent can more accurately determine the source address space permitted on an interface, thereby reducing SAV classification errors. In particular, the additional information described above can avoid improper blocking of legitimate traffic in asymmetric-route and hidden-prefix scenarios. This improvement does not require pervasive deployment and can be achieved at the external interfaces where the required information is available.
+When the required information is sufficiently complete, the SAV Agent can accurately determine the source address space permitted on an interface, thereby avoiding any improper block and impproper permit. This improvement does not require pervasive deployment and can be achieved at the external interfaces where the required information is available.
 
 ## Operational Efficiency Improvement
 
