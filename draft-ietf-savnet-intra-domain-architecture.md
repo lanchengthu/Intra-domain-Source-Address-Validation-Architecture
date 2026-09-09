@@ -147,7 +147,7 @@ When relevant routing information is not locally available to the SAV Agent, it 
 
 SAV-specific information is information dedicated to SAV rule generation. It may by itself provide sufficient information for SAV rule generation, or may be used together with routing information, depending on the mechanism and the information available.
 
-SAV-specific information may identify the external interfaces connected to the same attached entity and specify the source address space that the entity is authorized to use for sourcing traffic. The interface-to-entity association allows information about the entity to be used when generating SAV rules for the corresponding interfaces, while the authorized source address space can explicitly represent the source addresses permitted for the entity, including information that may not be available from routing information. Such information is useful in scenarios such as asymmetric routing and hidden prefixes.
+SAV-specific information should identify the external interfaces connected to the same attached entity and specify the source address space that the entity is authorized to use for sourcing traffic. The interface-to-entity association allows information about the entity to be used when generating SAV rules for the corresponding interfaces, while the authorized source address space can explicitly represent the source addresses permitted for the entity, including information that may not be available from routing information. Such information is useful in scenarios such as asymmetric routing and hidden prefixes.
 
 ## SAV-specific Information Delivery {#sec-info-delivery}
 
