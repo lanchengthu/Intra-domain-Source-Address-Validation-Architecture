@@ -204,7 +204,7 @@ The AS operator can also provision source prefixes that an entity is authorized 
 
 Operator-provisioned information can explicitly represent the authorized source address space, including source-only prefixes that are not represented in routing information. It may also provide sufficient information for SAV rule generation independently of routing information. For prefixes that are not assigned by the local AS, the AS operator should require the entity to provide sufficient information or evidence demonstrating that the entity is authorized to use those prefixes for source traffic.
 
-When both routing-derived and operator-provisioned prefixes are used, a mechanism can combine them to determine the source address space permitted on the relevant external interfaces. This allows routing-derived prefixes to reflect routing changes automatically, while operator provisioning can provide explicit authorization information, including prefixes that cannot be derived from routing information.
+When both routing-derived and operator-provisioned prefixes are used, the SAV agent can combine them to determine the source address space permitted on the relevant external interfaces. This allows routing-derived prefixes to reflect routing changes automatically, while operator provisioning can provide explicit authorization information, including prefixes that cannot be derived from routing information.
 
 ## SAV Rule Installation and Data-plane Enforcement {#sec-data-plane-enforcement}
 
