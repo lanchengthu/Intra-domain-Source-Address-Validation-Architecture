@@ -82,7 +82,7 @@ SAV Rule:
 : The rule that indicates the validity of a specific source IP address or source IP prefix per router interface. It is used by a router to make SAV decisions.
 
 SAV Agent:
-: A logical function that obtains information used for SAV rule generation, generates SAV rules, and provides the generated SAV rules to routers for application at specific external interfaces. A SAV Agent may be implemented on a router or in an operator-mananged system. This document does not require a particular deployment location for the SAV Agent. Depending on the mechanism and the information available, a SAV Agent may use routing information, SAV-specific information, or both.
+: A logical function that obtains information used for SAV rule generation, generates SAV rules, and provides the generated SAV rules to routers for application at specific external interfaces. A SAV Agent may be implemented on a router or in an operator-managed system. This document does not require a particular deployment location for the SAV Agent. Depending on the mechanism and the information available, a SAV Agent may use routing information, SAV-specific information, or both.
 
 SAV-specific Information:
 : Information specialized for SAV rule generation. SAV-specific information for intra-domain SAV may be provided by routers within an AS, or through operator provisioning (i.e., SAV-specific configurations).
@@ -204,7 +204,7 @@ The AS operator can also provision source prefixes that an entity is authorized 
 
 Operator-provisioned information can explicitly represent the authorized source address space, including source-only prefixes that are not represented in routing information. It may also provide sufficient information for SAV rule generation independently of routing information. For prefixes that are not assigned by the local AS, the AS operator should require the entity to provide sufficient information or evidence demonstrating that the entity is authorized to use those prefixes for source traffic.
 
-When both routing-derived and operator-provisioned prefixes are used, the SAV agent can combine them to determine the source address space permitted on the relevant external interfaces. This allows routing-derived prefixes to reflect routing changes automatically, while operator provisioning can provide explicit authorization information, including prefixes that cannot be derived from routing information.
+When both routing-derived and operator-provisioned prefixes are used, the SAV Agent can combine them to determine the source address space permitted on the relevant external interfaces. This allows routing-derived prefixes to reflect routing changes automatically, while operator provisioning can provide explicit authorization information, including prefixes that cannot be derived from routing information.
 
 ## SAV Rule Installation and Data-plane Enforcement {#sec-data-plane-enforcement}
 
